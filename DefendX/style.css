@@ -1,0 +1,318 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 99;
+
+}
+
+.logo img {
+  height: 40px;
+}
+
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero Section styles */
+#hero {
+  background-image: url('hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+}
+
+.hero-content p {
+  font-size: 18px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ff5e14;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+/* About Section styles */
+#about {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Products Section styles */
+#products {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.products-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-top: 30px;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Services Section styles */
+#services {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.services-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section styles */
+#testimonials {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.testimonials-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section styles */
+#contact {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Footer Section styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f5f5f5;
+  min-width: 200px;
+  padding: 10px;
+  top: 100%;
+  right: 0;
+  z-index: 1;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+#cart-items {
+  margin-bottom: 10px;
+}
+
+#cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#cart-total h3 {
+  font-size: 1.2em;
+}
+
+#cart-total-amount {
+  font-weight: bold;
+}
+/* Your existing CSS styles */
+/* ... */
+
+/* Add the new Dropdown Menu Styles */
+
+/* Dropdown Menu Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Button */
+.dropdown .dropdown-btn {
+  background-color: #A41212;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background-color: #f9f9f9;
+  padding: 12px;
+}
+
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Button */
+.dropdown .dropdown-btn {
+  background-color: #A41212;
+  color: rgb(2, 2, 2);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background-color: #1d1a1a;
+  padding: 12px;
+}
+
+/* Individual Cart Item */
+.dropdown-content .cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.dropdown-content .cart-item img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.dropdown-content .price {
+  margin-left: auto;
+}
+
+.dropdown-content .remove-btn {
+  margin-left: auto;
+  background-color: #f44336;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Sign Up and Login Options */
+nav ul li:nth-last-child(-n+2) {
+  margin-left: 10px;
+}
+

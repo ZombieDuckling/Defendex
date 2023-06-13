@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defendex - Self-Defense Store</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking an external CSS file -->
+    <script src="defendex.js" defer></script> <!-- Linking an external JavaScript file -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Defendex Logo"> <!-- Displaying the logo image -->
+            </div>
+            <ul class="navigation"> <!-- Creating a navigation menu -->
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown"> <!-- Creating a dropdown menu for the cart -->
+                    <a class="dropdown-btn" href="#">Cart</a>
+                    <div id="cart-dropdown" class="dropdown-content"> <!-- Dropdown content -->
+                        <div class="cart-item">
+                            <img src="product1.jpg" alt="Product 1"> <!-- Displaying product image -->
+                            <span class="name">Product 1</span> <!-- Displaying product name -->
+                            <span class="price">$10</span> <!-- Displaying product price -->
+                            <button class="remove-btn">Remove</button> <!-- Button to remove product from cart -->
+                        </div>
+                        <div class="cart-item">
+                            <img src="product2.jpg" alt="Product 2"> <!-- Displaying product image -->
+                            <span class="name">Product 2</span> <!-- Displaying product name -->
+                            <span class="price">$15</span> <!-- Displaying product price -->
+                            <button class="remove-btn">Remove</button> <!-- Button to remove product from cart -->
+                        </div>
+                    </div>
+                </li>
+                <li><a href="signup.html">Sign Up</a></li> <!-- Link to sign up page -->
+                <li><a href="login.html">Login</a></li> <!-- Link to login page -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Welcome to Defendex</h1>
+                <p>Your one-stop shop for all self-defense needs</p>
+                <a href="#products" class="cta-button">Shop Now</a> <!-- Call-to-action button -->
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about-content">
+                <h2>About Defendex</h2>
+                <p>Defendex is a leading self-defense store committed to providing high-quality self-defense products and services. Our mission is to empower individuals to protect themselves and their loved ones.</p>
+                <p>With a wide range of products and expert guidance, we ensure that our customers can find the right self-defense solutions to meet their specific needs.</p>
+            </div>
+        </section>
+
+        <section id="products">
+            <div class="products-content">
+                <h2>Featured Products</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="logo.png" alt="Product 1"> <!-- Displaying product image -->
+                        <h3>Product 1</h3> <!-- Displaying product name -->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla auctor fringilla diam, in pulvinar odio. Nullam nec tortor sed lectus mattis ultricies.</p> <!-- Product description -->
+                        <span class="price">$10</span> <!-- Displaying product price -->
+                        <button class="add-to-cart-btn">Add to Cart</button> <!-- Button to add product to cart -->
+                    </div>
+                    <div class="product-card">
+                        <img src="logo.png" alt="Product 2"> <!-- Displaying product image -->
+                        <h3>Product 2</h3> <!-- Displaying product name -->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla auctor fringilla diam, in pulvinar odio. Nullam nec tortor sed lectus mattis ultricies.</p> <!-- Product description -->
+                        <span class="price">$15</span> <!-- Displaying product price -->
+                        <button class="add-to-cart-btn">Add to Cart</button> <!-- Button to add product to cart -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="services-content">
+                <h2>Our Services</h2>
+                <ul>
+                    <li>Free self-defense workshops</li>
+                    <li>Expert advice from self-defense professionals</li>
+                    <li>Customized self-defense training programs</li>
+                    <li>Wide selection of self-defense products</li>
+                    <li>Secure and fast online shopping experience</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="testimonials-content">
+                <h2>Testimonials</h2>
+                <div class="testimonial">
+                    <img src="logo.png" alt="Testimonial 1"> <!-- Displaying testimonial image -->
+                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla auctor fringilla diam, in pulvinar odio. Nullam nec tortor sed lectus mattis ultricies.</blockquote> <!-- Testimonial quote -->
+                    <cite>- John Doe</cite> <!-- Testimonial author -->
+                </div>
+                <div class="testimonial">
+                    <img src="logo.png" alt="Testimonial 2"> <!-- Displaying testimonial image -->
+                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla auctor fringilla diam, in pulvinar odio. Nullam nec tortor sed lectus mattis ultricies.</blockquote> <!-- Testimonial quote -->
+                    <cite>- Jane Doe</cite> <!-- Testimonial author -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-content">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or inquiries, please fill out the form below, and we will get back to you as soon as possible.</p>
+                <form>
+                    <input type="text" placeholder="Your Name" required> <!-- Input field for name -->
+                    <input type="email" placeholder="Your Email" required> <!-- Input field for email -->
+                    <textarea placeholder="Your Message" required></textarea> <!-- Textarea field for message -->
+                    <button type="submit">Send Message</button> <!-- Button to submit the form -->
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Defendex - Self-Defense Store. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
